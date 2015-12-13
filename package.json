@@ -1,0 +1,16 @@
+{
+    "name": "cup-and-saucer",
+    "productName": "Cup and Saucer",
+    "description": "Cup and Saucer, a video by Colin Clark",
+    "main": "main.js",
+    "version": "1.0.0",
+    "author": "Colin Clark",
+    "license": "MIT",
+    "repository": "git://github.com/colinbdclark/cup-and-saucer.git",
+    "bugs": "http://github.com/colinbdclark/cup-and-saucer/issues",
+    "homepage": "http://github.com/colinbdclark/cup-and-saucer",
+    "readmeFilename": "README.md",
+    "dependencies": {
+        "aconite": "0.2.1"
+    }
+}
