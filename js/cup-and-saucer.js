@@ -28,20 +28,6 @@
         }
     });
 
-    fluid.defaults("colin.cupAndSaucer.sequencer", {
-        gradeNames: "aconite.clipSequencer.static",
-
-        clip: {
-            url: "videos/cup-and-saucer.m4v",
-            duration: 2923
-        },
-
-        model: {
-            clipSequence: [
-                "{that}.options.clip"
-            ]
-        }
-    });
 
     fluid.defaults("colin.cupAndSaucer.glRenderer", {
         gradeNames: "aconite.videoCompositor.glRenderer",
@@ -54,11 +40,28 @@
         uniforms: {}
     });
 
+
+    fluid.defaults("colin.cupAndSaucer.sequencer", {
+        gradeNames: "aconite.clipSequencer.static",
+
+        clip: {
+            url: "videos/cup-and-saucer.m4v",
+            outTime: "00:48:43"
+        },
+
+        model: {
+            clipSequence: [
+                "{that}.options.clip"
+            ]
+        }
+    });
+
+
     fluid.defaults("colin.cupAndSaucer.topSequencer", {
         gradeNames: "colin.cupAndSaucer.sequencer",
 
         clip: {
-            inTime: 0.03333333 * 2
+            inTime: "00:00:00:00",
         },
 
         components: {
@@ -68,11 +71,12 @@
         }
     });
 
+
     fluid.defaults("colin.cupAndSaucer.bottomSequencer", {
         gradeNames: "colin.cupAndSaucer.sequencer",
 
         clip: {
-            inTime: 0.0
+            inTime: "00:00:00:24",
         },
 
         components: {
